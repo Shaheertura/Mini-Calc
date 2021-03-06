@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class Advanced 3</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+			text-align: center;
+
+		}
+		.ibox{
+			background-color: orange;
+		}
+		h1,div{
+			color: white;
+		}
+	</style>
+	<script type="text/javascript">
+		function Add() {
+			var result=
+			Number(document.getElementById('fn').value)+
+			Number(document.getElementById ('sn').value);
+        document.getElementById('b1').value=result;
+
+		}
+        function Subtract() {
+			var result=
+			Number(document.getElementById('fn').value)-
+			Number(document.getElementById ('sn').value);
+        document.getElementById('b2').value=result;
+
+		}
+		 function Multiplication() {
+			var result=
+			Number(document.getElementById('fn').value)*
+			Number(document.getElementById ('sn').value);
+        document.getElementById('b3').value=result;
+
+		}
+		function Division() {
+			var result=
+			Number(document.getElementById('fn').value)/
+			Number(document.getElementById ('sn').value);
+        document.getElementById('b4').value=result;
+
+		}
+	</script>
+</head>
+<body>
+
+<h1>
+	Mini Calculator
+</h1>
+<div>First Number
+<input type="number" class="ibox" id="fn">
+</div>
+<div>Second Number
+<input type="number" class="ibox" id="sn">
+</div>
+<span>
+<input type="submit" value="Add" id="b1" onclick="Add()">
+</span>
+<span>
+<input type="submit" value="Subtract" id="b2" onclick="Subtract()">
+<span>
+<input type="submit" value="Multiplication" id="b3" onclick="Multiplication()">
+</span>
+<input type="submit" value="Division" id="b4" onclick="Division()">
+</body>
+</html>
